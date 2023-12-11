@@ -5,7 +5,7 @@ import SearchBarAdmin from "./SearchBarAdmin";
 
 export default function AdminPage({ children, table }) {
   return (
-    <section className="grid h-screen grid-rows-[1fr_0.5fr_8fr] gap-y-6 p-4 pt-[74px]">
+    <section className="grid h-screen grid-rows-[1fr_0.5fr_8fr] gap-y-6 p-4 pt-[4.6rem]">
       <div className="flex flex-col justify-between rounded-lg bg-gray-50 px-8 py-2 dark:bg-gray-700">
         <h1 className="font-medium capitalize text-gray-700 dark:text-gray-50">
           Manage {table}

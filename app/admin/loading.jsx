@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <section className="grid pt-[74px] grid-rows-[10%_5.5%_auto] gap-y-6 p-4">
+    <section className="grid grid-rows-[10%_5.5%_auto] gap-y-6 p-4 pt-[4.6rem]">
       <div className="flex flex-col justify-between  rounded-lg bg-gray-50 px-8 py-2 dark:bg-gray-700">
         <span className="h-6 w-40 rounded-md bg-gray-200 dark:bg-gray-800"></span>
         <span className="h-4 w-48 rounded-md bg-gray-200 dark:bg-gray-800"></span>

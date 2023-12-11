@@ -7,7 +7,7 @@ import { FaArrowLeft } from "react-icons/fa";
 
 export default function Admin() {
   return (
-    <section className="textgray-700 p-4 pt-[74px] dark:text-gray-50">
+    <section className="textgray-700 p-4 dark:text-gray-50 pt-[4.6rem]">
       <div className="flex h-full w-full flex-col items-center justify-center rounded-lg bg-gray-50 px-8 dark:bg-gray-700 md:px-0">
         <p className="text-xl text-gray-700 dark:text-gray-50 md:text-2xl">
           Welcome to,

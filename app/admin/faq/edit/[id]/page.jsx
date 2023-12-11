@@ -48,21 +48,18 @@ const UpdateFaq = ({ params }) => {
   };
 
   return (
-    <section className="grid grid-rows-[10%_auto] gap-y-6 p-4">
+    <section className="grid grid-rows-[10%_auto] p-4 pt-[4.6rem]">
       <ManageHeading table="faq" />
 
-      <div className="grid grid-rows-[auto_1fr] gap-4 rounded-lg bg-gray-50 px-16 py-12 dark:bg-gray-700">
-        <div className="text-center">
-          <h3 className=" mb-4 text-3xl font-medium text-gray-700 dark:text-gray-50">
-            Update FAQ
-          </h3>
-          <p className="mb-4 text-sm text-gray-700 dark:text-gray-50">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-            aperiam dolorum totam, ducimus impedit laborum?
-          </p>
-        </div>
+      <div className="-mb-[14rem] md:-mb-[12rem] mt-4 grid grid-rows-[1fr_3fr] rounded-lg bg-gray-50 px-8 py-4 dark:bg-gray-700 md:grid-rows-[1fr_4fr] md:px-16 md:py-8">
+        <h3 className="mb-4 text-center text-3xl font-medium text-gray-700 dark:text-gray-50">
+          Update FAQ
+        </h3>
 
-        <form className="grid grid-cols-2 gap-8" onSubmit={handleUpdate}>
+        <form
+          className="flex flex-col justify-between gap-2 md:grid md:grid-cols-2"
+          onSubmit={handleUpdate}
+        >
           <div className="flex flex-col">
             <label className="mb-2 text-sm font-medium text-gray-700 dark:text-gray-50">
               Question
@@ -95,8 +92,8 @@ const UpdateFaq = ({ params }) => {
             </button>
           </div>
         </form>
-        <ToastContainer autoClose={1000} />
       </div>
+      <ToastContainer autoClose={1000} />
     </section>
   );
 };

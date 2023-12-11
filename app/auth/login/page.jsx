@@ -37,35 +37,29 @@ export default function LoginPage() {
   return (
     // <section className='px-8 m-auto'>
     <>
-      <div className="grid h-screen w-full grid-cols-2">
-        <div className="flex flex-col justify-between bg-blue-500 pb-16">
-          <Link href={"/"} className="ml-4 mt-4 text-gray-50">
-            <FaArrowLeft />
-          </Link>
-
+      <div className="grid w-full grid-rows-2 md:h-screen md:grid-cols-2 md:grid-rows-none ">
+        <div className="flex flex-col justify-between bg-blue-500 pb-16 pt-[6.5rem]">
           <div className="flex flex-col items-center justify-center text-center">
             <Image
               src="/axel-bubble.png"
               width="400"
               height="400"
               alt="logo Astronesia"
+              className="w-72 md:w-96"
             />
             <h3 className="mb-4 text-4xl font-medium text-white">
               Astronesia
               <br /> Elementary School
             </h3>
-            <p className="w-1/2 text-sm text-gray-200">
-              The more you learn, the more you learn
-            </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-between px-28 pb-8 pt-20 text-center">
+        <div className="flex flex-col justify-between bg-gray-50 px-8 py-12 text-center dark:bg-gray-800 md:px-28 md:pb-8 md:pt-[10rem]">
           <div>
-            <div className="m-auto mb-8 w-fit rounded-full bg-gray-100 p-4 text-blue-500">
+            <div className="m-auto mb-8 w-fit rounded-full bg-gray-100 p-4 text-blue-500 dark:bg-gray-700">
               <FaCode size="25" />
             </div>
-            <h3 className="mb-2 text-3xl font-medium text-gray-800">
+            <h3 className="mb-2 text-3xl font-medium text-gray-800 dark:text-gray-50">
               Hello Again!
             </h3>
             <p className="mb-8 text-gray-500">
@@ -80,7 +74,7 @@ export default function LoginPage() {
                 type="text"
                 placeholder="Username"
                 value={userInfo.username}
-                className="rounded-md bg-gray-100 px-4 py-2 focus:outline-blue-500"
+                className="rounded-md bg-gray-100 px-4 py-2 text-gray-800 focus:outline-blue-500 dark:bg-gray-700 dark:text-gray-50"
                 onChange={(e) =>
                   setUserInfo({ ...userInfo, username: e.target.value })
                 }
@@ -89,7 +83,7 @@ export default function LoginPage() {
                 type="email"
                 placeholder="Email"
                 value={userInfo.email}
-                className="rounded-md bg-gray-100 px-4 py-2 focus:outline-blue-500"
+                className="rounded-md bg-gray-100 px-4 py-2 text-gray-800 focus:outline-blue-500 dark:bg-gray-700 dark:text-gray-50"
                 onChange={(e) =>
                   setUserInfo({ ...userInfo, email: e.target.value })
                 }
@@ -98,7 +92,7 @@ export default function LoginPage() {
                 type="password"
                 placeholder="Password"
                 value={userInfo.password}
-                className="rounded-md bg-gray-100 px-4 py-2 focus:outline-blue-500"
+                className="rounded-md bg-gray-100 px-4 py-2 text-gray-800 focus:outline-blue-500 dark:bg-gray-700 dark:text-gray-50"
                 onChange={(e) =>
                   setUserInfo({ ...userInfo, password: e.target.value })
                 }

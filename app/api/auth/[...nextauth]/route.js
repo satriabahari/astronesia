@@ -55,28 +55,9 @@ export const authOption = {
       },
     }),
   ],
-  // callbacks: {
-  //   jwt({ token, user }) {
-  //     if (!user) {
-  //       return token;
-  //     }
-
-  //     return {
-  //       ...token,
-  //       id: user.id,
-  //     };
-  //   },
-  //   session({ session, token }) {
-  //     return {
-  //       ...session,
-  //       id: token.id,
-  //     };
-  //   },
-  // },
   pages: {
     signIn: "/auth/login",
   },
-  // secret: process.env.NEXTAUTH_SECRET,
 };
 
 const handler = NextAuth(authOption);

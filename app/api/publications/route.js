@@ -34,7 +34,6 @@ export const POST = async (request) => {
         title: body.title,
         description: body.description,
         image: body.image,
-        date_created: body.date_created,
       },
     });
     return NextResponse.json(

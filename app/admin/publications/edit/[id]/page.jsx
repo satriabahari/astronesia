@@ -56,21 +56,18 @@ const UpdatePublication = ({ params }) => {
   };
 
   return (
-    <section className="grid grid-rows-[10%_auto] gap-y-6 p-4">
+    <section className="grid grid-rows-[10%_auto] p-4 pt-[4.6rem]">
       <ManageHeading table="Publications" />
 
-      <div className="grid grid-rows-[auto_1fr] gap-4 rounded-lg bg-gray-50 px-16 py-12 dark:bg-gray-700">
-        <div className="text-center">
-          <h3 className=" mb-4 text-3xl font-medium text-gray-700 dark:text-gray-50">
-            Update Publication
-          </h3>
-          <p className="mb-4 text-sm text-gray-700 dark:text-gray-50">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-            aperiam dolorum totam, ducimus impedit laborum?
-          </p>
-        </div>
+      <div className="mt-4 grid grid-rows-[auto_1fr] gap-4 rounded-lg bg-gray-50 px-8 py-4 dark:bg-gray-700 md:px-16 md:py-8">
+        <h3 className="mb-4 text-center md:text-3xl text-xl font-medium text-gray-700 dark:text-gray-50">
+          Update Publication
+        </h3>
 
-        <form className="grid grid-cols-2 gap-8" onSubmit={handleUpdate}>
+        <form
+          className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-2"
+          onSubmit={handleUpdate}
+        >
           <div className="flex flex-col">
             <label className="mb-2 text-sm font-medium text-gray-700 dark:text-gray-50">
               Title
